@@ -1,1 +1,1 @@
-"# parking-lot-system-design" 
+# parking-lot-system-design
