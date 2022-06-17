@@ -129,34 +129,6 @@ class ParkingLot {
         }
     }
 
-    findAllAvailableSlots() {
-        if (this.MAX_PARKING_SLOTS > 0) {
-            var availableSlots = new Array();
-            for (var i = 0; i < this.parkingSlots.length; i++) {
-                if (!(this.parkingSlots[i] && this.parkingSlots[i].COLOR && this.parkingSlots[i].NUMBER)) {
-                    availableSlots.push(i + 1);
-                }
-            }
-            return availableSlots.join(', ');
-        } else {
-            return null;
-        }
-    }
-
-    findAllAllocatedSlots() {
-        if (this.MAX_PARKING_SLOTS > 0) {
-            var allocatedSlots = new Array();
-            for (var i = 0; i < this.parkingSlots.length; i++) {
-                if (this.parkingSlots[i] && this.parkingSlots[i].COLOR && this.parkingSlots[i].NUMBER) {
-                    allocatedSlots.push(i + 1);
-                }
-            }
-            return allocatedSlots.join(', ');
-        } else {
-            return null;
-        }
-    }
-
     findNearestAvailableSlot() {
         var ele = false;
         for (var i = 0; i < this.parkingSlots.length; i++) {
