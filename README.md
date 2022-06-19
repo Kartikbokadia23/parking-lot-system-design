@@ -44,9 +44,9 @@ There are two classes defined:
 ## Dependencies Used
 
 - [Mocha](https://mochajs.org/): A JavaScript test framework for Node.js programs.
-- 
+
 - [Chai](https://www.chaijs.com/): A BDD/TDD assertion library for Node.js and it can be paired with any JS testing framework.
-- 
+
 - [nyc](https://www.npmjs.com/package/nyc): A JS code coverage tool extensively tested with Mocha for measuring code coverage.
-- 
+
 - [Chalk](https://www.npmjs.com/package/chalk): A npm module used to style terminal string.
