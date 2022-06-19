@@ -9,6 +9,8 @@ var interactiveMode = true;
 var Parking = require('./modules/parkingLot.js'),
     parkingLot = new Parking();
 
+require('events').EventEmitter.defaultMaxListeners = 0;
+
 if (interactiveMode === true) {
     openInteractiveConsole();
 }
